@@ -18,11 +18,7 @@ li {
   display: flex;
   justify-content: center;
 }
-.mid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .clr {
   clear: both;
 }
@@ -276,8 +272,12 @@ li {
   background-color: #fff6f2;
   padding: 30px 0;
 }
+.vivo .main:hover .item {
+  transform: scale(1.1);
+}
 #vivo_phn .vivo .main {
   position: relative;
+  overflow: hidden;
 }
 #vivo_phn .vivo .item {
   background: url(../image-1//1--ow8Aez.jpg) no-repeat center;
@@ -285,6 +285,7 @@ li {
   display: block;
   display: flex;
   align-items: center;
+  transition: 0.4s;
 }
 #vivo_phn .vivo .item .tex {
   padding: 50px 10px;
@@ -307,37 +308,44 @@ li {
 }
 
 /* coment  */
-#vivo_phn .bag .main {
+.bag .main:hover .item {
+  transform: scale(1.1);
+}
+.bag .main {
   position: relative;
 }
-#vivo_phn .bag .item {
+.bag .item {
   background: url(../image-1/2--UCUESW.jpg) no-repeat center;
   background-size: cover;
   display: block;
   display: flex;
   align-items: center;
+  transition: 0.4s;
 }
-#vivo_phn .bag .item .tex {
+.bag .tex {
   padding: 50px 10px;
 }
-#vivo_phn .bag .item h3 {
+.bag h3 {
   color: #ff6000;
   font-size: 25px;
 }
-#vivo_phn .bag .item h4 {
+.bag h4 {
   font-size: 25px;
   color: #444444;
 }
-#vivo_phn .bag .item .shop {
+.bag .item .shop {
   margin-top: 13px;
 }
-#vivo_phn .bag .item .shop a {
+.bag .item .shop a {
   text-transform: capitalize;
   color: #ffa800;
   font-weight: 700;
 }
 
 /* coment  */
+#vivo_phn .cam .main:hover .item {
+  transform: scale(1.1);
+}
 #vivo_phn .cam .main {
   height: 100%;
 }
@@ -349,6 +357,7 @@ li {
   background-size: cover;
   display: block;
   height: 100%;
+  transition: 0.4s;
 }
 #vivo_phn .cam .tex {
   padding: 25px;
@@ -540,4 +549,111 @@ li {
   font-size: 14px;
 }
 
+.hot_deal .main {
+  padding: 30px;
+}
+.hot_deal .heading {
+  margin-bottom: 25px;
+}
+.hot_deal .heading h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+.hot_deal .mid a h5 {
+  margin-bottom: 8px;
+  font-size: 19px;
+  color: #444444;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 0;
+  /* font-size: 16px; */
+}
+.hot_deal .mid p {
+  margin-bottom: 7px;
+  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
+
+.hot_deal .mid .btn {
+  font-size: 14px;
+  padding: 14px 25px;
+  font-weight: 700;
+  color: #ffffff !important;
+  background-color: #ff6000;
+  position: relative;
+  transition: all 0.3s;
+  line-height: 1;
+}
+.hot_deal .right .main {
+  padding: 0 !important;
+}
+.hot_deal .left .main {
+  padding: 0 !important;
+}
+.hot_deal .right .pic img {
+  /* width: 65px; */
+  width: 100%;
+
+  border: 1px solid #dddddd;
+  margin: 0 0 10px auto;
+  display: block;
+}
+
 /* on sale slider  part End  */
+/* discount banar part start   */
+
+.discount-banner {
+  background-color: #ffffff;
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+.discount-banner .discount-banner-contain {
+  text-align: center;
+}
+.discount-banner .discount-banner-contain h2 {
+  font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
+  text-transform: capitalize;
+  margin-bottom: 3px;
+  margin-top: -5px;
+}
+
+.discount-banner .discount-banner-contain h1 {
+  font-size: calc(18px + (42 - 18) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #444444;
+}
+.discount-banner .discount-banner-contain h1 span {
+  color: #ff6000;
+}
+.discount-banner .discount-banner-contain h1 span + span {
+  color: #ffa800;
+  font-weight: 700;
+}
+
+.discount-banner .discount-banner-contain .rounded-contain {
+  border: 2px dashed #ffa800;
+  border-radius: 50px;
+  padding: 5px;
+}
+.discount-banner .discount-banner-contain .rounded-contain .rounded-subcontain {
+  background-color: #ff6000;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 18px 0;
+  font-weight: 600;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+  letter-spacing: 0.08em;
+  line-height: 1;
+  border-radius: 50px;
+}
+
+/* discount banar part End   */
+/* food-part part Start  */
+
+/* food-part part End  */
