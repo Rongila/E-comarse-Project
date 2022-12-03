@@ -83,3 +83,19 @@ $(".box-category_slider").slick({
   slidesToScroll: 2,
   arrows: false,
 });
+$(".testimonial_slider").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+});
+$(".instagram_slider").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 2,
+  arrows: false,
+});
